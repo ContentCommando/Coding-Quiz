@@ -2,8 +2,8 @@
 
 // Pulling DOM
 var timer = document.querySelector(".timer");
-var options = document.querySelectorAll(".options");
 var questionTitle = document.querySelector("#question-title")
+var options = document.querySelectorAll(".options");
 
 
 
@@ -15,22 +15,31 @@ var question1 = {
     correctAns: 2
 }
 
+console.log(options);
 
 // Question Display
 function showQuestion() {
- questionTitle.textContent = question1.title
+questionTitle.textContent = question1.title
 
 }
+
 
 showQuestion();
 
 
 // Options Display
 options.forEach(function(element, index) {
-element.textContent = question1.options[index]
+element.textContent = question1.options[index];
+element.addEventListener("click", function() {
+if (question1.correctAns == index) {
+    element.textContent = "Correct!"
+} 
+else {
+    element.textContent = "Wrong!"
+}
+
+})
 });
-
-
 
 
 // function theTimer() {

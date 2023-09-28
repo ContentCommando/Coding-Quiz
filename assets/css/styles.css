@@ -62,6 +62,15 @@ li {
   border-radius: 10px;
 }
 
+#odd1 {
+  background-color: #563d7c;
+  color: white;
+}
+
+#odd2 {
+  background-color: #563d7c;
+  color: white;
+}
 li:nth-child(odd) {
   background-color: #f3edfc;
 }
