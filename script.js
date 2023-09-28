@@ -6,32 +6,43 @@ var questionTitle = document.querySelector("#question-title")
 var options = document.querySelectorAll(".options");
 
 
-
-
 // Quizzes
-var question1 = {
+var question = [
+    {
     title: "HTML stands for:",
     options: ["Hypertext Makeup LAN", "Hightext Makeup Language", "Hypertext Markup Language"],
     correctAns: 2
+},
+{
+    title: "CSS stands for:",
+    options: ["Cascading Style Sheet", "Cascadind Support Signals", "Custom Style Sheet"],
+    correctAns: 0
+},
+{
+    title: "Javascript enables users to do what?",
+    options: ["Become web-savvy", "Interact with an application", "Become physically fit"],
+    correctAns: 1
+},
+{
+    title: "Bootstrap is good for",
+    options: ["Designing applications faster", "Browsing the internet", "Learning how to code"],
+    correctAns: 2
 }
+]
 
-console.log(options);
 
 // Question Display
 function showQuestion() {
-questionTitle.textContent = question1.title
-
+questionTitle.textContent = question[0].title
 }
-
 
 showQuestion();
 
-
 // Options Display
 options.forEach(function(element, index) {
-element.textContent = question1.options[index];
+element.textContent = question[0].options[index];
 element.addEventListener("click", function() {
-if (question1.correctAns == index) {
+if (question.correctAns == index) {
     element.textContent = "Correct!"
 } 
 else {
