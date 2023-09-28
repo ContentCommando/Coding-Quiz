@@ -1,35 +1,32 @@
 # Coding-Quiz
-This is an application that features quizzes on coding. It helps the user test their knowledge of the subject and shows results of how they  have performed by displaying a score at the end.
+This is an application that features quizzes on coding. It
+helps the user test their knowledge on the subject and shows
+results of how they  have performed by displaying a score at the end.
 
 
-## Task
+## Functionalities
 
-As you proceed in your journey to becoming a front-end web developer, it’s likely that you’ll be asked to complete a coding assessment, perhaps as part of an interview process. A typical coding assessment is a combination of multiple-choice questions and interactive coding challenges. 
+Work is still ongoing on this project but below are the current
+features and functionalities on the application based on set criteria.
 
-To help you become familiar with these tests and give you a chance to apply the skills from this module, this week’s challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. This week’s coursework has taught you all the skills you need to succeed in this challenge.
+* The quiz timer is installed and set to a maximum of 60 seconds.
+At the click of the start button, the timer starts reading and the first quiz is
+available on the screen.
 
+* Each question set contains buttons for each answer four answer options. On clicking any of these
+buttons, the user immediately sees whther their selected option is rigth or wrong.
 
-## User Story
+* When option is selected, the user can click next to move to the next question. There are
+a total four questions at this stage of the project.
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+## Future Work 
+* To write additial code that subtract time from the clock when an incorrect option is selected.
 
-## Acceptance Criteria
+* When the game ends, it should display the user's score and give the user the ability to save their initials and their score.
 
-Create a code quiz that contains the following requirements:
+* To also make the code DRY.
 
-* A start button that when clicked a timer starts and the first question appears.
- 
-  * Questions contain buttons for each answer.
-  * 
-  * When answer is clicked, the next question appears
-  * 
-  * If the answer clicked was incorrect then subtract time from the clock
+Here is [link](https://contentcommando.github.io/Coding-Quiz/index.html) to the deployed application.
 
-* The quiz should end when all questions are answered or the timer reaches 0.
-
-  * When the game ends, it should display their score and give the user the ability to save their initials and their score
-
+## Mock-up
+![Alt text](2023-09-28.png)
